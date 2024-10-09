@@ -1,0 +1,38 @@
+# Set Up Your Environment:
+node -v
+
+# Initialize a Node.js Project:
+mkdir my-api
+cd my-api
+npm init -y
+
+# Install Express:
+npm install express
+
+#Create a Basic API:
+  --- index.js---
+
+#Run the API:
+node index.js
+
+#Testing the API:
+GET http://localhost:3000/tasks
+
+#POST request to create a new task:
+POST http://localhost:3000/tasks
+Body (JSON):
+{
+  "title": "New Task"
+}
+
+#PUT request to update a task:
+PUT http://localhost:3000/tasks/1
+Body (JSON):
+{
+  "title": "Updated Task 1",
+  "completed": true
+}
+
+#DELETE request to delete a task:
+DELETE http://localhost:3000/tasks/2
+
